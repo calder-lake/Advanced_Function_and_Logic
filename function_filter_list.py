@@ -13,20 +13,19 @@ def filter_list(input_list, number):
     sliced list with "number" elements
     """
     list = input_list
+    j = []
     for item in list:
-        if number == item:
-            i = list[item]
-            list = list[0:i]
-            break
+        if item <= number:
+            j.append(item)
         else:
             continue
-    return list
+    return j
 
 
 # In[7]:
 
 
-some_list = [1,2,3,4,5,7,8,6,9]
+some_list = [1,2,3,4,5,4,7,8,6,3,9]
 
 
 # In[8]:
