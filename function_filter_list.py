@@ -8,9 +8,9 @@ def filter_list(input_list, number):
     """
     Parameters:
     input_list: a list of elements
-    number: int for number of elements to be included in slice
+    number: int for threshold value above which elements are excluded
     Returns:
-    sliced list with "number" elements
+    list with elements removed with values above the threshold
     """
     list = input_list
     j = []
